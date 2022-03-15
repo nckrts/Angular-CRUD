@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-title>Update descripition</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Product:"
+                   [(ngModel)]="product.name" name="name"> <!--colocando os valores no intup-->
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Price: $"
+                   [(ngModel)]="product.price" name="price"> <!--colocando os valores no intup-->
+        </mat-form-field>
+    </form>
+    <button class="bsave" mat-raised-button (click)="updadeProduct()" color="primary">
+        Save
+    </button>
+
+    <button class="bcancel" mat-raised-button (click)="cancel()" color="accent">
+        Cancel
+    </button>
+</mat-card>

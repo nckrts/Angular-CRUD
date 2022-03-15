@@ -1,0 +1,24 @@
+<ul>
+    <li *ngFor="let product of products" class="black displayProduct">
+        <a class="productname">PRODUCT: </a>
+        <br>
+        <h3 class="printscreem">{{ product.name }} <br> $: {{ product.price }} </h3>
+
+
+
+        <a class="icon1" routerLink="/products/update/{{ product.id }}">
+            <i class="material-icons black">
+                edit
+            </i>
+        </a>
+        <a> ⠀⠀ ⠀COD: {{ product.id }}⠀⠀ ⠀⠀ </a>
+        <a class="icon2" routerLink="/products/delete/{{ product.id }}">
+            <i class="material-icons black">
+                delete
+            </i>
+        </a>
+
+
+    </li>
+
+</ul>
